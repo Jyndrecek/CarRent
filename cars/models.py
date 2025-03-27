@@ -1,6 +1,15 @@
 from django.db import models
 
+class Equipment(models.Model):
+    equipment = models.CharField(max_length=50)
+
+    def __str__(self) -> str:
+        return self.equipment
+
+
 class Car(models.Model):
+
+    
     ENGINE_TYPES = [
         ("benzyna", "Benzynowy"),
         ("diesel", "Diesel"),
@@ -16,6 +25,7 @@ class Car(models.Model):
         ("sedan", "kareta"),
         ("combi", "combi"),
         ("suv", "SUV"),
+        ("coupe", "coupe"),
     ]
     CLASSIFICATIONS = [
         ("a", "mini"),
