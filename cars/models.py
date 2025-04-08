@@ -56,4 +56,10 @@ class Car(models.Model):
     value = models.PositiveBigIntegerField()
     availability = models.BooleanField()
     trunk_capacity = models.PositiveSmallIntegerField()
-    image = models.ImageField()
+    image = models.ImageField(upload_to="images")
+
+    def __str__(self) -> str:
+        return self.brand + " " + self.model
+    
+    @staticmethod
+    def dodopisania 
