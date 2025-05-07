@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia borzych aucisk</title>
+</head>
+<body>
+    <header class="container sticky-top text-center">
+        <h1>Wypożyczalnia samochoduf</h1>
+        <nav class="container sticky-top text-center">
+            <div class="container-fluid">
+                <div>
+                    <a class="nav-link" href="{% url 'index' %}">Strona główna</a>
+                    <a class="nav=link" href="{% url 'cars' %}">Samochody</a>
+                    <a class="nav-link" href="{% url 'categories' %}">Kategorie</a>
+                </div>
+            </div>
+        </nav>   
+        <section class="container">
+            <div class="row">
+                <div class="col-8">
+                    {% block left_[panel] %}
+                     
+                    {% endblock left_[panel] %}
+                </div>
+                <div class="col-4"><
+                    {% block right_panel %}
+                    
+                    {% endblock right_panel %}
+                </div>    
+            </div>
+        </section> 
+    </header>
+</body>
+</html>

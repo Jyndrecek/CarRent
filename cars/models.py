@@ -62,4 +62,4 @@ class Car(models.Model):
         return self.brand + " " + self.model
     
     @staticmethod
-    def dodopisania 
+    def
